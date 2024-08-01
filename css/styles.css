@@ -25,6 +25,52 @@ main {
     text-align: center;
 }
 
+/* Wyrównanie nawigacji */
+.custom-navbar {
+    display: flex;
+    justify-content: space-between; /* Rozszerza elementy nawigacji na całą szerokość */
+    align-items: center; /* Wyrównuje elementy w pionie */
+}
+
+/* Styl dla "Home" */
+.navbar-brand {
+    margin-left: -170px; /* Dostosuj ten margines, aby przesunąć "Home" w lewo */
+}
+
+/* Styl dla pozostałych elementów menu */
+.navbar-nav {
+    margin-right: -170px; /* Dostosuj ten margines, aby przesunąć menu w prawo */
+}
+
+.nav-item {
+    margin-left: 60px; /* Dostosuj odstępy między elementami menu */
+}
+
+/* Styl dla linków w nawigacji */
+.nav-link {
+    font-size: 1.2rem; /* Zwiększa rozmiar czcionki dla linków w nawigacji */
+    color: rgb(255, 255, 255); /* Ustawia kolor czcionki na biały */
+    padding: 0.5rem 1rem; /* Dodaje trochę wewnętrznego odstępu (padding) dla przycisków */
+    transition: color 0.3s ease; /* Dodaje efekt przejścia dla zmiany koloru */
+}
+
+
+/* Styl dla przycisku menu rozwijanego */
+.navbar-toggler {
+    font-size: 1.5rem; /* Zwiększa rozmiar ikony przycisku */
+    border: none; /* Usuwa domyślną ramkę */
+    background: transparent; /* Ustawia tło na przezroczyste */
+}
+
+@media (max-width: 767.98px) {
+    .navbar-brand {
+        margin-left: 0; /* Przesunięcie w lewo może być zbyt duże na mniejszych ekranach */
+    }
+    .navbar-nav {
+        margin-right: 0; /* W mniejszych ekranach dostosuj marginesy */
+    }
+}
+
 .text-light {
     display: flex;
     justify-content: space-between; /* Rozsuwa elementy na boki */
@@ -55,6 +101,27 @@ main {
     display: inline-block;
     text-align: left;
     width: 100%;
+}
+
+.globe-container {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -0.4em;
+}
+
+.globe {
+    width: 1em;
+    height: 1em;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .marquee {
