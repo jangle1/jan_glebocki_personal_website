@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    background: url('C:\\Users\\janek\\Desktop\\DS cases\\Web_dev_upskill\\personal_website-1\\img\\background.jpg') no-repeat center center fixed;
+    background: url('C:\\Users\\janek\\Desktop\\DS cases\\Web_dev_upskill\\personal_website-1\\img\\IMG_8082.png') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -34,7 +34,7 @@ main {
 
 /* Styl dla "Home" */
 .navbar-brand {
-    margin-left: -170px; /* Dostosuj ten margines, aby przesunąć "Home" w lewo */
+    margin-left: -10px; /* Dostosuj ten margines, aby przesunąć "Home" w lewo */
 }
 
 /* Styl dla pozostałych elementów menu */
@@ -43,7 +43,7 @@ main {
 }
 
 .nav-item {
-    margin-left: 60px; /* Dostosuj odstępy między elementami menu */
+    margin-left: 120px; /* Dostosuj odstępy między elementami menu */
 }
 
 /* Styl dla linków w nawigacji */
@@ -85,11 +85,11 @@ main {
 }
 
 .flex-left {
-    margin-left: 0; /* Opcjonalnie, aby wyrównać do lewej */
+    margin-left: 10%; /* Opcjonalnie, aby wyrównać do lewej */
 }
 
 .flex-right {
-    margin-right: 0; /* Opcjonalnie, aby wyrównać do prawej */
+    margin-right: 10%; /* Opcjonalnie, aby wyrównać do prawej */
 }
 
 .smaller-text {
