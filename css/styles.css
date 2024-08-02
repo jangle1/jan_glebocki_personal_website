@@ -32,8 +32,8 @@ body.about-page .navbar-brand, body.about-page .nav-link {
     text-align: justify;
     padding: 50px 0;
     width: 100%;
-    margin-top: 410px;
-  }
+    margin-top: 0px;
+}
 
 .about-section h1 {
     font-size: 3em;
@@ -86,7 +86,6 @@ header {
 main {
     height: 100vh;
     width: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -306,7 +305,7 @@ body.contact-page .navbar-brand, body.contact-page .nav-link {
     text-align: justify;
     padding: 50px 0;
     width: 100%;
-    margin-top: -110px; /* Dostosuj, jeśli nagłówek nie jest widoczny */
+    margin-top: 50px; /* Dostosuj, jeśli nagłówek nie jest widoczny */
 }
 
 .contact-section h1 {
@@ -372,4 +371,71 @@ body.contact-page .navbar-brand, body.contact-page .nav-link {
 
 #LIcolor {
     color: #0077b5;
+}
+
+/* Styl dla strony My Experience */
+body.work-page {
+    background: none !important;
+    background-color: white !important;
+    color: black !important;
+    overflow: auto !important;
+    height: auto !important;
+}
+
+body.work-page header.navbar {
+    background-color: white !important;
+}
+
+body.work-page .navbar-brand, body.work-page .nav-link {
+    color: black !important;
+}
+
+.experience-section, .achievements-section, .portfolio-section, .recommendations-section, .courses-section {
+    padding: 50px 0;
+    width: 100%;
+    margin-top: 20px; /* Dostosuj w razie potrzeby */
+}
+
+.experience-section h1, .achievements-section h2, .portfolio-section h2, .recommendations-section h2, .courses-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.experience-section hr, .achievements-section hr, .portfolio-section hr, .recommendations-section hr, .courses-section hr {
+    border: 1px solid black;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.project-item, .recommendations-content blockquote, .courses-content ul {
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 20px;
+}
+
+.project-item h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    margin-bottom: 5px;
+}
+
+.recommendations-content blockquote {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    border-left: 5px solid #ccc;
+    padding-left: 10px;
+}
+
+.courses-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.courses-content li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
