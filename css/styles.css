@@ -1,3 +1,4 @@
+/* Style dla strony głównej */
 html, body {
     height: 100%;
     margin: 0;
@@ -7,6 +8,72 @@ html, body {
 body {
     background: url('C:\\Users\\janek\\Desktop\\DS cases\\Web_dev_upskill\\personal_website-1\\img\\IMG_8082.png') no-repeat center center fixed;
     background-size: cover;
+    color: white;
+}
+
+/* Style dla strony About Me */
+body.about-page {
+    background: none !important;
+    background-color: white !important;
+    color: black !important;
+    overflow: auto !important;
+    height: auto !important;
+}
+
+body.about-page header.navbar {
+    background-color: white !important;
+}
+
+body.about-page .navbar-brand, body.about-page .nav-link {
+    color: black !important;
+}
+
+.about-section {
+    text-align: justify;
+    padding: 50px 0;
+    width: 100%;
+    margin-top: 410px;
+  }
+
+.about-section h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    margin-left: 110px;
+}
+
+.about-section hr {
+    border: 1px solid black;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column; /* Ustawienie elementów w kolumnie */
+    margin-right: 90px;
+}
+
+.text {
+    padding: 20px;
+    padding-right: 105px;
+    width: 100%; /* Zajmuje całą szerokość kontenera */
+    box-sizing: border-box; /* Uwzględnia padding w szerokości elementu */
+    margin-left: 90px;
+}
+
+.image {
+    padding: 20px;
+    width: 100%; /* Zajmuje całą szerokość kontenera */
+    box-sizing: border-box; /* Uwzględnia padding w szerokości elementu */
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 header {
@@ -54,7 +121,6 @@ main {
     transition: color 0.3s ease; /* Dodaje efekt przejścia dla zmiany koloru */
 }
 
-
 /* Styl dla przycisku menu rozwijanego */
 .navbar-toggler {
     font-size: 1.5rem; /* Zwiększa rozmiar ikony przycisku */
@@ -81,7 +147,6 @@ main {
 .text-light h1 {
     font-size: 4rem;
     margin-bottom: 2rem;
-    /*margin-left: -270%;*/
 }
 
 .flex-left {
@@ -132,7 +197,6 @@ main {
     left: 0; /* Ustawienie tekstu od lewej krawędzi ekranu */
     overflow: hidden;
     white-space: nowrap;
-    /*background-color: rgba(0, 0, 0, 0.5);  Opcjonalnie: półprzezroczyste tło dla lepszej czytelności */
     color: white; /* Kolor tekstu dla lepszej widoczności */
     display: flex;
     align-items: center; /* Wyrównanie tekstu do środka w pionie */
@@ -150,3 +214,73 @@ main {
     0% { transform: translateX(1%); }
     100% { transform: translateX(-100%); }
 }
+
+/* CSS galerii obrazów */
+.gallery-image {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* TUTAJ MOZNA SMIALO ZMIENIC NA NO-WRAP */
+    justify-content: center; /* Wyśrodkowuje elementy w poziomie */
+    align-items: center; /* Opcjonalnie, wyśrodkowuje elementy w pionie */
+  }
+  
+  .gallery-image .img-box {
+    box-sizing: border-box;
+    margin: 10px;
+    height: 250px;
+    width: calc(33.333% - 20px); /* Ustaw szerokość, aby pasowała do trzech obrazów w rzędzie */
+    overflow: hidden;
+    color: white;
+    position: relative;
+    background-color: white;
+  }
+  
+  .gallery-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Zachowuje proporcje i przycina obraz, aby wypełnić kontener */
+    transition: transform 0.4s ease;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .transparent-box {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .img-box:hover img { 
+    transform: scale(1.1);
+  }
+  
+  .img-box:hover .transparent-box {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+  }
+  
+  .img-box:hover {
+    cursor: pointer;
+  }
+  
+  .caption > p:nth-child(2) {
+    font-size: 0.8em;
+  }
+  
+  .opacity-low {
+    opacity: 0.5;
+  }
