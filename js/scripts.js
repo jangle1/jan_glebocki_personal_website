@@ -33,3 +33,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
     type();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Website Loaded');
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const headingElement = document.getElementById('contact-heading');
+    const text = 'Contact me';
+    let index = 0;
+
+    function type() {
+        if (index < text.length) {
+            headingElement.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, 100); // Czas pomiędzy literami, dostosuj według potrzeb
+        }
+    }
+
+    type();
+});
