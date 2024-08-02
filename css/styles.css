@@ -367,4 +367,9 @@ body.contact-page .navbar-brand, body.contact-page .nav-link {
 .contact-message p {
     font-size: 1.2em;
     text-align: center;
+    margin-left: 90px;
+}
+
+#LIcolor {
+    color: #0077b5;
 }

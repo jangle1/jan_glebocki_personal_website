@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (index < text.length) {
             headingElement.textContent += text.charAt(index);
             index++;
-            setTimeout(type, 100); // Czas pomiędzy literami, dostosuj według potrzeb
+            setTimeout(type, 200); // Czas pomiędzy literami, dostosuj według potrzeb
         }
     }
 
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (index < text.length) {
             headingElement.textContent += text.charAt(index);
             index++;
-            setTimeout(type, 100); // Czas pomiędzy literami, dostosuj według potrzeb
+            setTimeout(type, 200); // Czas pomiędzy literami, dostosuj według potrzeb
         }
     }
 
@@ -40,14 +40,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener("DOMContentLoaded", function() {
     const headingElement = document.getElementById('contact-heading');
-    const text = 'Contact me';
+    const text = 'Contact me!';
     let index = 0;
 
     function type() {
         if (index < text.length) {
             headingElement.textContent += text.charAt(index);
             index++;
-            setTimeout(type, 100); // Czas pomiędzy literami, dostosuj według potrzeb
+            setTimeout(type, 200); // Czas pomiędzy literami, dostosuj według potrzeb
         }
     }
 
