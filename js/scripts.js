@@ -53,3 +53,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     type();
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const headingElement = document.getElementById('work-heading');
+    const text = 'Work section';
+    let index = 0;
+
+    function type() {
+        if (index < text.length) {
+            headingElement.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, 200); // Czas pomiędzy literami, dostosuj według potrzeb
+        }
+    }
+
+    type();
+});
