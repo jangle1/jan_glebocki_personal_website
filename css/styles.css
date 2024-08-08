@@ -418,10 +418,16 @@ body.work-page .navbar-brand, body.work-page .nav-link {
     margin: 30px auto;
 }
 
-.project-item, .recommendations-content blockquote, .courses-content ul {
-    margin-left: 90px;
+.project-item, .recommendations-content blockquote, .courses-content ul, .achievements-content {
+    margin-left: 110px;
     margin-right: 90px;
     margin-bottom: 20px;
+}
+
+.achievements-content img {
+    margin-left: 230px !important;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .project-item h3 {
