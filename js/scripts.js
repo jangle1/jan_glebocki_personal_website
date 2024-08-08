@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("DOMContentLoaded", function() {
     const headingElement = document.getElementById('work-heading');
-    const text = 'Work section';
+    const text = 'Work';
     let index = 0;
 
     function type() {
