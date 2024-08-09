@@ -1,4 +1,3 @@
-/* Style dla strony głównej */
 html, body {
     height: 100%;
     margin: 0;
@@ -11,7 +10,6 @@ body {
     color: white;
 }
 
-/* Style dla strony About Me */
 body.about-page {
     background: none !important;
     background-color: white !important;
@@ -52,22 +50,22 @@ body.about-page .navbar-brand, body.about-page .nav-link {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    flex-direction: column; /* Ustawienie elementów w kolumnie */
+    flex-direction: column; 
     margin-right: 90px;
 }
 
 .text {
     padding: 20px;
     padding-right: 105px;
-    width: 100%; /* Zajmuje całą szerokość kontenera */
-    box-sizing: border-box; /* Uwzględnia padding w szerokości elementu */
+    width: 100%; 
+    box-sizing: border-box;
     margin-left: 90px;
 }
 
 .image {
     padding: 20px;
-    width: 100%; /* Zajmuje całą szerokość kontenera */
-    box-sizing: border-box; /* Uwzględnia padding w szerokości elementu */
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 .image img {
@@ -91,19 +89,16 @@ main {
     text-align: center;
 }
 
-/* Wyrównanie nawigacji */
 .custom-navbar {
     display: flex;
-    justify-content: space-between; /* Rozszerza elementy nawigacji na całą szerokość */
-    align-items: center; /* Wyrównuje elementy w pionie */
+    justify-content: space-between; 
+    align-items: center; 
 }
 
-/* Styl dla "Home" */
 .navbar-brand {
     margin-left: -10px; /* Dostosuj ten margines, aby przesunąć "Home" w lewo */
 }
 
-/* Styl dla pozostałych elementów menu */
 .navbar-nav {
     margin-right: -85px; /* Dostosuj ten margines, aby przesunąć menu w prawo */
 }
@@ -112,19 +107,18 @@ main {
     margin-left: 120px; /* Dostosuj odstępy między elementami menu */
 }
 
-/* Styl dla linków w nawigacji */
 .nav-link {
-    font-size: 1.2rem; /* Zwiększa rozmiar czcionki dla linków w nawigacji */
-    color: rgb(255, 255, 255); /* Ustawia kolor czcionki na biały */
-    padding: 0.5rem 1rem; /* Dodaje trochę wewnętrznego odstępu (padding) dla przycisków */
-    transition: color 0.3s ease; /* Dodaje efekt przejścia dla zmiany koloru */
+    font-size: 1.2rem; 
+    color: rgb(255, 255, 255); 
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease; 
 }
 
 /* Styl dla przycisku menu rozwijanego */
 .navbar-toggler {
-    font-size: 1.5rem; /* Zwiększa rozmiar ikony przycisku */
-    border: none; /* Usuwa domyślną ramkę */
-    background: transparent; /* Ustawia tło na przezroczyste */
+    font-size: 1.5rem; 
+    border: black; 
+    background: grey;
 }
 
 @media (max-width: 767.98px) {
@@ -138,9 +132,9 @@ main {
 
 .text-light {
     display: flex;
-    justify-content: space-between; /* Rozsuwa elementy na boki */
+    justify-content: space-between; 
     width: 100%;
-    padding: 0 5%; /* Daje trochę odstępu od krawędzi */
+    padding: 0 5%; 
 }
 
 .text-light h1 {
@@ -149,16 +143,16 @@ main {
 }
 
 .flex-left {
-    margin-left: 10%; /* Opcjonalnie, aby wyrównać do lewej */
+    margin-left: 10%; 
 }
 
 .flex-right {
-    margin-right: 10%; /* Opcjonalnie, aby wyrównać do prawej */
+    margin-right: 10%; 
 }
 
 .smaller-text {
     font-size: 3rem !important;
-    text-align: left; /* Dostosuj tę wartość do pożądanego rozmiaru czcionki */
+    text-align: left;
 }
 
 .align-left {
@@ -191,20 +185,20 @@ main {
 .marquee {
     width: 100%;
     height: 33vh; /* Wysokość ustawiona na 1/3 strony */
-    position: fixed; /* Pozycjonowanie tekstu w dolnej części ekranu */
-    bottom: 0; /* Ustawienie tekstu na dole strony */
-    left: 0; /* Ustawienie tekstu od lewej krawędzi ekranu */
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
     overflow: hidden;
     white-space: nowrap;
-    color: white; /* Kolor tekstu dla lepszej widoczności */
+    color: white; 
     display: flex;
-    align-items: center; /* Wyrównanie tekstu do środka w pionie */
+    align-items: center; 
 }
 
 .marquee p {
     display: inline-block;
     padding-left: 100%;
-    font-size: 12em; /* Zwiększenie rozmiaru czcionki */
+    font-size: 12em; 
     animation: marquee 30s linear infinite;
     position: relative;
 }
@@ -214,13 +208,13 @@ main {
     100% { transform: translateX(-100%); }
 }
 
-/* CSS galerii obrazów */
+
 .gallery-image {
     padding: 20px;
     display: flex;
     flex-wrap: wrap; /* TUTAJ MOZNA SMIALO ZMIENIC NA NO-WRAP */
-    justify-content: center; /* Wyśrodkowuje elementy w poziomie */
-    align-items: center; /* Opcjonalnie, wyśrodkowuje elementy w pionie */
+    justify-content: center; 
+    align-items: center; 
   }
   
   .gallery-image .img-box {
@@ -237,7 +231,7 @@ main {
   .gallery-image img {
     height: 100%;
     width: 100%;
-    object-fit: cover; /* Zachowuje proporcje i przycina obraz, aby wypełnić kontener */
+    object-fit: cover; 
     transition: transform 0.4s ease;
   }
   
@@ -284,7 +278,7 @@ main {
     opacity: 0.5;
   }
 
-/* Styl dla strony kontaktowej */
+/* Contact */
 body.contact-page {
     background: none !important;
     background-color: white !important;
@@ -305,7 +299,7 @@ body.contact-page .navbar-brand, body.contact-page .nav-link {
     text-align: justify;
     padding: 50px 0;
     width: 100%;
-    margin-top: 50px; /* Dostosuj, jeśli nagłówek nie jest widoczny */
+    margin-top: 50px; 
 }
 
 .contact-section h1 {
@@ -330,7 +324,7 @@ body.contact-page .navbar-brand, body.contact-page .nav-link {
 
 .contact-info {
     display: flex;
-    flex-direction: column; /* Ustawienie elementów w kolumnie */
+    flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
 }
@@ -339,7 +333,7 @@ body.contact-page .navbar-brand, body.contact-page .nav-link {
     display: flex;
     align-items: center;
     font-size: 1.2em;
-    margin: 20px 0; /* Odstępy pomiędzy elementami */
+    margin: 20px 0; 
 }
 
 .contact-item i {
@@ -348,14 +342,14 @@ body.contact-page .navbar-brand, body.contact-page .nav-link {
 }
 
 .contact-item p, .contact-item a {
-    margin: 0; /* Usunięcie domyślnego marginesu */
+    margin: 0; 
 }
 
 .contact-item a {
     text-decoration: none;
     color: black;
     display: flex; /* Flex dla wyśrodkowania tekstu w pionie */
-    align-items: center; /* Wyrównanie tekstu z ikoną */
+    align-items: center; 
 }
 
 .contact-item a:hover {
@@ -373,7 +367,7 @@ body.contact-page .navbar-brand, body.contact-page .nav-link {
     color: #0077b5;
 }
 
-/* Styl dla strony My Experience */
+/* Work */
 body.work-page {
     background: none !important;
     background-color: white !important;
@@ -425,7 +419,7 @@ body.work-page .navbar-brand, body.work-page .nav-link {
 }
 
 .achievements-content img {
-    margin-left: 230px !important;
+    margin-left: 250px !important;
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -603,5 +597,5 @@ body.work-page .navbar-brand, body.work-page .nav-link {
 }
 
 .recommendations-content {
-    margin-left: 30px;
+    margin-left: 200px;
 }
