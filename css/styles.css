@@ -212,7 +212,7 @@ main {
 .gallery-image {
     padding: 20px;
     display: flex;
-    flex-wrap: wrap; /* TUTAJ MOZNA SMIALO ZMIENIC NA NO-WRAP */
+    flex-wrap: wrap;
     justify-content: center; 
     align-items: center; 
   }
@@ -233,7 +233,7 @@ main {
     width: 100%;
     object-fit: cover; 
     transition: transform 0.4s ease;
-  }
+  }  
   
   .caption {
     position: absolute;
