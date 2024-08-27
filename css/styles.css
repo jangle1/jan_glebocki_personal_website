@@ -599,3 +599,229 @@ body.work-page .navbar-brand, body.work-page .nav-link {
 .recommendations-content {
     margin-left: 200px;
 }
+
+@media (max-width: 767.98px) {
+    .navbar-brand {
+        margin-left: 0;
+    }
+    .navbar-nav {
+        margin-right: 0;
+        margin-left: 0; /* Centering the menu items */
+    }
+    .nav-item {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    .nav-link {
+        padding: 0.5rem 0;
+        font-size: 1rem;
+    }
+    .text-light {
+        flex-direction: column;
+        padding: 0;
+    }
+    .text-light h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .flex-left, .flex-right {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .smaller-text {
+        font-size: 1.5rem !important;
+        text-align: center;
+    }
+    .marquee p {
+        font-size: 2em;
+    }
+    .gallery-image .img-box {
+        width: calc(50% - 20px); /* Two images per row on small screens */
+    }
+    .button-28 {
+        width: 80%; /* Make buttons wider on smaller screens */
+    }
+    .about-section, .contact-section, .experience-section, .achievements-section, .portfolio-section, .recommendations-section, .courses-section {
+        padding: 20px 10px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .about-section h1, .contact-section h1, .experience-section h1, .achievements-section h2, .portfolio-section h2, .recommendations-section h2, .courses-section h2 {
+        font-size: 2em;
+        margin-left: 0;
+    }
+    .project-item, .recommendations-content blockquote, .courses-content ul, .achievements-content, .company-header, .company-description {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .achievements-content img {
+        margin-left: 0 !important;
+    }
+    .recommendations-content {
+        margin-left: 0;
+    }
+
+    /* Move Jan Głębocki and Located in Warsaw, Poland text down */
+    .text-light h1 {
+        margin-top: 0rem !important; 
+        /* Add top margin to move the text down */
+    }
+
+
+    #main-name {
+        margin-top: 10rem !important; /* Przesuń tekst w dół o 4 rem */
+        /* Dodatkowo możesz ustawić inne właściwości jak np. wyrównanie tekstu */
+        text-align: center; /* Wyśrodkuj tekst (opcjonalnie) */
+    }
+
+    .flex-right {
+        margin-top: 2rem; /* Przesuń w dół, jeśli potrzebne */
+        text-align: center;
+    }
+
+    .align-left {
+        display: block !important;
+        margin: 0 auto;
+    }
+
+    .globe-container {
+        display: inline-block;
+        margin-left: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-brand {
+        font-size: 1.2em;
+    }
+
+    .nav-link {
+        font-size: 1em;
+    }
+
+    .experience-section h1,
+    .experience-section h5,
+    .company-section .company-header span,
+    .company-section .company-description p,
+    .recommendations-content blockquote p,
+    .portfolio-content .project-item h3,
+    .portfolio-content .project-item p,
+    .achievements-content p,
+    .courses-content li {
+        font-size: 0.9em;
+    }
+
+    .experience-content p a.button-28 {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+
+    .company-header img {
+        max-width: 50px;
+        height: auto;
+    }
+
+    .company-header span {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .company-description ul li,
+    .portfolio-content .project-item ol li {
+        font-size: 0.85em;
+    }
+
+    .recommendations-content blockquote {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .achievements-content img,
+    .courses-content img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .portfolio-content .project-item,
+    .company-section .company {
+        margin-bottom: 20px;
+    }
+
+    .portfolio-content .project-item p a {
+        font-size: 0.9em;
+    }
+
+    .animated-border-quote {
+        margin-bottom: 20px;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    main {
+        padding: 0;
+    }
+
+}
+
+
+@media (max-width: 767.98px) {
+    .contact-section {
+        padding: 20px 0;
+        margin-top: 20px;
+    }
+
+    .contact-section h1 {
+        font-size: 2em;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .contact-section hr {
+        width: 90%;
+    }
+
+    .contact-content {
+        margin-right: 0;
+        padding: 0 20px;
+    }
+
+    .contact-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-item {
+        font-size: 1em;
+        margin: 10px 0;
+        justify-content: center;
+    }
+
+    .contact-item i {
+        font-size: 1.5em;
+        margin-right: 5px;
+    }
+
+    .contact-message p {
+        font-size: 1em;
+        margin-left: 0;
+        text-align: center;
+        padding: 0 10px;
+    }
+}
