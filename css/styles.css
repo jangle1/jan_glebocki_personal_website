@@ -877,3 +877,39 @@ body.work-page .navbar-brand, body.work-page .nav-link {
         margin-right: 4em;
     }
 }
+
+@media (max-width: 767.98px) {
+    .about-section h5 {
+        display: none !important;
+    }   
+
+    .text {
+        padding: 0 0px; /* Dodanie paddingu, aby zapewnić odpowiednie odstępy od krawędzi */
+        width: 100%; /* Ustawienie szerokości na 100% */
+        box-sizing: border-box; /* Zapewnienie, że padding jest wliczany do szerokości */
+    }
+
+    .text p {
+        font-size: 0.8em; /* Zwiększenie rozmiaru czcionki dla lepszej czytelności */
+        text-align: justify; /* Justowanie tekstu, aby wyglądał bardziej spójnie */
+        margin-left: -2em !important;
+        padding-right: 5em !important;
+    }
+
+    .gallery-image .img-box {
+        width: 100%; /* Ustawienie szerokości obrazów na 100% */
+        margin-bottom: 3px; /* Dodanie odstępu między obrazami */
+        margin-left: -1px;
+    }
+
+    .gallery-image {
+        display: flex;
+        flex-direction: column; /* Ustawienie obrazów w kolumnie */
+        align-items: center; /* Wycentrowanie obrazów */
+    }
+
+    .gallery-image img {
+        width: 100%; /* Obrazy zajmują całą szerokość kontenera */
+        height: 100%; /* Zachowanie proporcji obrazów */
+    }
+}
