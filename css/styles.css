@@ -606,7 +606,7 @@ body.work-page .navbar-brand, body.work-page .nav-link {
     }
     .navbar-nav {
         margin-right: 0;
-        margin-left: 0; /* Centering the menu items */
+        margin-left: 0; 
     }
     .nav-item {
         margin-left: 0;
@@ -639,10 +639,10 @@ body.work-page .navbar-brand, body.work-page .nav-link {
         margin-top: 4em;
     }
     .gallery-image .img-box {
-        width: calc(50% - 20px); /* Two images per row on small screens */
+        width: calc(50% - 20px); 
     }
     .button-28 {
-        width: 80%; /* Make buttons wider on smaller screens */
+        width: 80%; 
     }
     .about-section, .contact-section, .experience-section, .achievements-section, .portfolio-section, .recommendations-section, .courses-section {
         padding: 20px 10px;
@@ -664,21 +664,21 @@ body.work-page .navbar-brand, body.work-page .nav-link {
         margin-left: 0;
     }
 
-    /* Move Jan Głębocki and Located in Warsaw, Poland text down */
+    
     .text-light h1 {
         margin-top: 0rem !important; 
-        /* Add top margin to move the text down */
+        
     }
 
 
     #main-name {
-        margin-top: 10rem !important; /* Przesuń tekst w dół o 4 rem */
-        /* Dodatkowo możesz ustawić inne właściwości jak np. wyrównanie tekstu */
-        text-align: center; /* Wyśrodkuj tekst (opcjonalnie) */
+        margin-top: 10rem !important; 
+        
+        text-align: center; 
     }
 
     .flex-right {
-        margin-top: 2rem; /* Przesuń w dół, jeśli potrzebne */
+        margin-top: 2rem; 
         text-align: center;
     }
 
@@ -884,32 +884,32 @@ body.work-page .navbar-brand, body.work-page .nav-link {
     }   
 
     .text {
-        padding: 0 0px; /* Dodanie paddingu, aby zapewnić odpowiednie odstępy od krawędzi */
-        width: 100%; /* Ustawienie szerokości na 100% */
-        box-sizing: border-box; /* Zapewnienie, że padding jest wliczany do szerokości */
+        padding: 0 0px; 
+        width: 100%; 
+        box-sizing: border-box; 
     }
 
     .text p {
-        font-size: 0.8em; /* Zwiększenie rozmiaru czcionki dla lepszej czytelności */
-        text-align: justify; /* Justowanie tekstu, aby wyglądał bardziej spójnie */
+        font-size: 0.8em; 
+        text-align: justify; 
         margin-left: -2em !important;
         padding-right: 5em !important;
     }
 
     .gallery-image .img-box {
-        width: 100%; /* Ustawienie szerokości obrazów na 100% */
-        margin-bottom: 3px; /* Dodanie odstępu między obrazami */
+        width: 100%; 
+        margin-bottom: 3px; 
         margin-left: -1px;
     }
 
     .gallery-image {
         display: flex;
-        flex-direction: column; /* Ustawienie obrazów w kolumnie */
-        align-items: center; /* Wycentrowanie obrazów */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .gallery-image img {
-        width: 100%; /* Obrazy zajmują całą szerokość kontenera */
-        height: 100%; /* Zachowanie proporcji obrazów */
+        width: 100%; 
+        height: 100%; 
     }
 }
